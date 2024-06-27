@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap');
+
+body {
+    font-family: 'Jost';
+    font-size: 2rem;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: lightskyblue;
+    border: none;
+    border-radius: .7rem;
+    transition: .1s;
+}
+button:hover {
+    cursor: pointer;
+}
+button:active {
+    scale: .95;
+}
+
+input {
+    font-size: inherit;
+    font-family: inherit;
+    background-color: transparent;
+    color: inherit;
+    width: 10rem;
+    height: 2rem;
+    padding: 1rem;
+    border: 3px solid rgb(0, 190, 255);
+    border-radius: .7rem;
+    outline: none;
+    transition: .3s;
+}
+
+input[type=number]::-webkit-inner-spin-button{
+    appearance: none; 
+}
+
+h4 {
+    animation: anim .5s;
+}
+
+@keyframes anim {
+    from {
+        opacity: 0;
+        scale: .5;
+    } to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.normalW {
+    color: green;
+}
+.highW, .lowW {
+    color: orange;
+}
+.obesity {
+    color: red;
+}
