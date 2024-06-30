@@ -11,9 +11,15 @@
 </head>
 <body>
     <main>
-        <h1>Calculadora IMC</h1>
-        <input type="number" id="altura" placeholder="Altura (m)">
-        <input type="number" id="peso" placeholder="Peso (kg)">
+        <h2>Calculadora IMC</h2>
+        <div class="inputs">
+            <input type="text" id="altura" required>
+            <label for="altura">Altura (m)</label>
+        </div>
+        <div class="inputs">
+            <input type="text" id="peso" required>
+            <label for="peso">Peso (kg)</label>
+        </div>
         <button>Calcular</button>
         <div id="result"></div>
     </main>

@@ -3,8 +3,8 @@ $(document).ready(function() {
 });
 
 function calc() {
-    let weight = $('#peso').val();
-    let height = $('#altura').val();
+    let weight = $('#peso').val().replace(',', '.');
+    let height = $('#altura').val().replace(',', '.');
     let imc = (weight / height**2).toFixed(2);
     let imcClass;
 
